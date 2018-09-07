@@ -7,14 +7,16 @@ using namespace std;
 int main( const int argc, const char* const argv[]) 
 {	
 	int x;
-unsigned int y;
-x = atoi(argv[1]); //converting char to int
-y = x;
+	unsigned int y;
 
-cout << "The value of x is " << x << " ." << endl;
-cout << "The value of y is " << y << " ." << endl;
-cout << "The most significant bit of x is " << (x >> (8 * sizeof(x)-1)) << " ." << endl; 
-cout << "The most significant bit of y is " << (y >> (8 * sizeof(y)-1)) << " ." << endl;  
+	x = atoi(argv[1]); //converting char to int
+	y = x;
+
+	cout << "The value of x is " << x << " ." << endl; 	//output value of x
+	cout << "The value of y is " << y << " ." << endl;	//output value of y
+	cout << "The most significant bit of x is " << (x >> (8 * sizeof(x)-1)) << " ." << endl; //bit-shift for most significant bit
+	cout << "The most significant bit of y is " << (y >> (8 * sizeof(y)-1)) << " ." << endl;  
+
 	//int
 	int i; 
 	cout<< "Type: \"int\"; " << "Size: " << sizeof(i) << " bytes; " << "Minimum value: " << INT_MIN <<" ; Maximum value: " << INT_MAX << endl;
@@ -66,4 +68,6 @@ cout << "The most significant bit of y is " << (y >> (8 * sizeof(y)-1)) << " ." 
 	//unsigned char
 	unsigned char u; 
 	cout<< "Type: \"unsigned char\"; " << "Size: " << sizeof(u) << " bytes; " << "Minimum value: " << "0" <<" ; Maximum value: " << UCHAR_MAX << endl;
+
+	return 0;
 }
