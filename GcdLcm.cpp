@@ -1,25 +1,25 @@
+//Lab3
+//1. GCD and LCM
+
 #include <iostream>
 #include <stdlib.h>
 
 using namespace std;
 int main (const int argc, const char* const argv[])
 {
-	if(argc < 3)
-	{
+	if(argc < 3){
 		cerr<< "Error: Unable to compute GCD and/or LCM because of insufficient arguments." << endl;
 		return -1;
 	}
 
-	if(argc > 3)
-	{
+	if(argc > 3){
 		cerr<<"Warning: Expecting two command line arguments; received "<< argc-1<< "; ignoring extraneous arguments."<< endl;
 	}
 
 	int a = atoi(argv[1]);
 	int b = atoi(argv[2]);
-	
-	if (a <=0 || b <= 0)
-	{
+
+	if (a <=0 || b <= 0){
 		cerr <<"Error: Unable to compute GCD and/or LCM because of invalid input." <<endl;
 		return -1;
 	}
@@ -28,6 +28,7 @@ int main (const int argc, const char* const argv[])
 	int lcm = 0;
 
 	int x;
+
 	if(a<b){
 		x=a;
 	}
