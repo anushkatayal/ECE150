@@ -1,3 +1,6 @@
+//Lab 3
+//3.StdDev
+
 #include <iostream>
 #include <stdlib.h>
 #include <math.h>
@@ -65,6 +68,7 @@ int main (const int argc, const char* const argv[])
 	cout << "Average floating-point number: " << avg << endl;
 	cout << "Maximum floating-point number: " << max << endl;
 	cout << "Population standard deviation: " << sigma << endl;
+	
 	if(s == -1){
 		cout << "Sample standard deviation: infinity";
 	}
